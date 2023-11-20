@@ -1,0 +1,11 @@
+
+.socials{
+    @include display-center;
+    gap: 15px;
+    font-size: $l;
+
+    & i:hover{
+        color: rgba(11, 55, 82, 0.53);
+        transform: translateY(-5px);
+    }
+}

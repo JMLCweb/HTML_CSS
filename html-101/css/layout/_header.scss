@@ -1,0 +1,59 @@
+.header{
+    background-color: $Black;
+    display: flex;
+    justify-content: space-around;
+
+    &__logo{
+        padding: 60px;
+    }
+    &__bar-list{
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 50px;
+        @include display-center;
+
+
+      }
+      &__bar-links{
+        font-size: $xl;
+        justify-content: center;
+        background-color: $neutral01 ;
+        padding: 10px;
+        border-radius: 15px;
+
+        &:hover{
+          transform: translate(5px, 2px);
+        }
+      }
+      
+}
+ 
+.menu{
+position: absolute;
+top: 0;
+left: 0;
+background: #ffffff;
+width: 440px;
+height: 100%;
+transform: translate3d(-440px, 0, 0);
+transition: transform 0.35s;
+}
+
+/* fade in checked menu */    
+.menu-checkbox:checked + .menu{
+  transform: translate3d(0, 0, 0);
+}
+
+label.menu-toggle{
+  position: absolute;    
+  right: -60px;
+  width: 60px;
+  height: 60px;
+  line-height: 0px;    
+  display: block;
+  padding: 0;
+  text-indent: -9999px;
+  background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat;
+}
+
+  

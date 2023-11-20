@@ -1,0 +1,17 @@
+.footer{
+    background-color: #ffffff;
+    display: flex ;
+    height: 100px;
+    justify-content: center;
+    
+    &__links{
+        @include display-center;
+        padding: 15px;
+        gap:15px;
+        font-weight: bold;
+        font-size: $s;
+    }
+
+}
+
+

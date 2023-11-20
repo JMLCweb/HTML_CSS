@@ -1,0 +1,23 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+@import "vendors/normalize";
+
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+
+@import "components/body";
+@import "components/footer";
+@import "components/socials";
+@import "components/button";
+
+
+@import "layout/header";
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald&family=Roboto:wght@100&display=swap');
+

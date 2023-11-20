@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <h1>The Rules of HTML</h1>
+
+  <h2>Html is based on tags and attributes</h2>
+  <code>
+    &lt;p&gt;&lt;/p&gt; é uma tag
+  </code>
+  <br />
+  <code>
+    &lt;a href="https://www.sapo.pt"&gt;&lt;/a&gt; é uma tag a (anchor) com o attribute href com o valor https://www.sapo.pt
+  </code>
+
+  <h2>Html is not case sensitive</h2>
+  <CODE>
+    &lt;p&gt;&lt;/p&gt; é uma tag
+  </CODE>
+  <br />
+  <p>Apesar de não ser case sensitive é boa prática termos todo o nosso código em lower case</p>
+
+  <h2>Html has void and not void tags</h2>
+  <CODE>
+    &lt;p&gt;&lt;/p&gt; é uma tag not void, espera ter conteudo dentro de si. Logo tem uma opening e uma closing tag.
+  </CODE>
+  <br />
+  <CODE>
+    &lt;img src="" /&gt; é uma tag void. O seu propósitio está associado a attributes e não a conteudo interno.
+  </CODE>
+
+  <h2>Html is meant to be nested</h2>
+
+  <h2>Always close your tags</h2>
+  <CODE>
+    &lt;p&gt;&lt;/p&gt; é uma tag not void, espera ter conteudo dentro de si. Logo tem uma opening e uma closing tag.
+  </CODE>
+  <br />
+  <CODE>
+    &lt;img src="" /&gt; é uma tag void. O seu propósitio está associado a attributes e não a conteudo interno.
+  </CODE>
+
+  <h2>An HTML documents is divided in two sections, head and body</h2>
+  <p>Things in the head tag are things that shouldn't be rendered: information about the page and how to process it.
+    Things in the body tag are the things that should be displayed: the actual content.
+    Javascript in the body is executed as it is read and as the page is rendered.
+    Javascript in the head is interpreted before anything is rendered.</p>
+
+  <h2>HTML should be done with semantic in mind</h2>
+  <strong> Contents... </strong>
+  <b> Contents... </b>
+  <i>Test</i> and <em>Test</em>
+
+  <h2>Relations between tags</h2>
+  <p>A li should only exist inside an ul or ol</p>
+  <p>A a tag should't wrap a paragraph or heading</p>
+  <p>A a tag or button tag should wrap the same element</p>
+
+
+  <h2>Exercicios</h2>
+
+
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

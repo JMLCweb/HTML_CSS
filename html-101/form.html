@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulário</title>
+    <link rel="icon" type="image/x-icon" href="https://jmlcwebdesign.com/wp-content/uploads/2022/10/IMG_9932-150x150.png">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+
+    .form{
+      width: 500px;
+      background-color: rgb(181, 183, 179);
+      border: 3px solid black;
+      margin-left: 4px;
+    }
+
+    .submit{
+      
+      box-sizing: border-box;
+    }
+
+  </style>
+  <body>
+    <h1>Reservation Request</h1>
+    <form class="form">
+      <fieldset>
+        <legend style="color: blue">General Information</legend>
+
+        <label for="arrivaldate">Arrival Date</label>
+        <input type="date" id="arrivaldate" placeholder="arrivaldate" required />
+        <span style="color: red">Arrival date is invalid</span>
+
+        <div>
+          <label for="nights">Nº nights</label>
+          <input type="text" id="nights" placeholder="nº of nights" required />
+        
+          <span style="color: red"> Nights must be a number. </span>
+        </div>
+
+        <div>
+          <label for="adults">Adults</label>
+          <select>
+            <option value="0"></option>
+§         </select>
+          </div>
+
+        <div>
+          <label for="children">Children</label>
+          <input
+            type="number"
+            id="numberchildren"
+            name="children"
+            min="0"
+            max="20"
+            placeholder="0"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend style="color: blue">Preferences</legend>
+
+        <span>Room Type</span>
+        <input type="radio" name="roomtype" id="Standard" value="standart" />
+        <label for="standart">Standart</label>
+        <input type="radio" name="roomtype" id="business" value="business"/>Business
+        <label for="business">Business</label>
+        <input type="radio" name="roomtype" id="suite" value="suite"/> Suite
+        <label for="suite">Suite</label>
+
+        <div>
+          <span>Bed Type</span>
+          <input type="radio" name="bedtype" id="king" value="King" />
+          <label for="king">King</label>
+          <input type="radio" name="bedtype" id="double" value="Double" /> 
+          <label for="double">Double</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="smoking" name="smoking" />
+          <label for="smoking"> Smoking</label><br />
+          
+          
+
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend style="color: blue">Contact Information</legend>
+
+        <label for="nome">Name:</label>
+        <input type="text" id="nome" name="nome" required />
+        <span style="color: red"> Name is required. </span>
+
+        <div>
+          <label for="email">Email:</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="graceyahoo.com"
+            required
+          />
+
+          <span style="color: red">Email adress is invalid</span>
+        </div>
+
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="123-456-789"
+          required
+        />
+        <span style="color: red">Phone number is invalid</span>
+      </fieldset>
+      
+      <div class="submit">
+       
+        <button 
+        type="submit" 
+        value="Submit">Submit</button>
+        
+        <button 
+        type="reset"
+        value="Clear"> Clear</button>
+
+        <svg width="200" height="30">
+          <circle 
+          cx="10" cy="23" 
+          r="5" stroke="black" 
+          stroke-width="4" fill="red" />
+        </svg>
+        
+      </div>
+      
+
+    </form>
+    
+  </body>
+</html> 

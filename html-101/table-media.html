@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background: greenyellow;
+      color: white;
+    }
+  </style>
+
+  <img src="http://www.codingfusion.com/PostPics/image/HTML-Table-Example-Fifth-CodingFusion.png" />
+
+  <table>
+    <caption>Tabela 1</caption>
+    <colgroup>
+      <col span="1" style="background-color: green" />
+      <col span="1" style="background-color: lightgreen" />
+      <col span="1" style="background-color: green" />
+      <col span="1" style="background-color: lightgreen" />
+      <col span="1" style="background-color: green" />
+      <col span="1" style="background-color: lightgreen" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="colgroup" colspan="6">STUDENTS MARK SHEET</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="mainRow">
+        <th scope="col">Name</th>
+        <th scope="col">Maths</th>
+        <th scope="col">Science</th>
+        <th scope="col">English</th>
+        <th scope="col">Physics</th>
+        <th scope="col">General Knowledge</th>
+      </tr>
+      <tr class="altRow">
+        <th scope="row">David</th>
+        <td>85</td>
+        <td>87</td>
+        <td>88</td>
+        <td>92</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <th scope="row">Richard</th>
+        <td>91</td>
+        <td>81</td>
+        <td>78</td>
+        <td>71</td>
+        <td>74</td>
+      </tr>
+      <tr>
+        <th scope="row">John</th>
+        <td>81</td>
+        <td>86</td>
+        <td>88</td>
+        <td>84</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th scope="row">Tony</th>
+        <td>84</td>
+        <td>86</td>
+        <td>87</td>
+        <td>82</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <th scope="row">Scott</th>
+        <td>71</td>
+        <td>79</td>
+        <td>82</td>
+        <td>88</td>
+        <td>89</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>
+    Img vs Figure vs Picture
+  </h2>
+
+  <figure>
+    <picture>
+      <source media="(min-width:650px)" srcset="https://placehold.co/650x650">
+      <source media="(min-width:465px)" srcset="https://placehold.co/465x465">
+      <img src="https://placehold.co/200x200" alt="Flowers" style="width:auto;">
+    </picture>
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+
+
+
+  <img src="https://placehold.co/300x300"
+    srcset="https://placehold.co/465x465 465w, https://placehold.co/650x650 650w, https://placehold.co/1000x1000 1000w"
+    alt="Flowers" style="width:auto;">
+
+
+  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+    <source src="http://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" type="video/mp4">
+    <source src="http://mainline.i3s.unice.fr/mooc/elephants-dream-medium.webm" type="video/webm">
+    <track label="English subtitles" kind="subtitles" srclang="en"
+      src="http://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-en.vtt">
+    <track label="Deutsch subtitles" kind="subtitles" srclang="de"
+      src="http://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-de.vtt">
+    <track label="English chapters" kind="chapters" srclang="en"
+      src="http://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt" default>
+  </video>
+
+  <svg height="130" width="500">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

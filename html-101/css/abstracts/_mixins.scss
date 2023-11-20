@@ -1,0 +1,12 @@
+
+@mixin display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin vertical-align($position: relative){
+    position: $position;
+    padding-top: 50%;
+    transform: translateY(-50%);
+}
